@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.tittle {
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
+    border: 3px solid black;
+}
+
+/* ------------------------------- Index/Home ------------------------------- */
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+    padding-left: 25px;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+}
+
+nav {
+    background-image: url(../images/design1_image2.jpg);
+    height: 240px;
+    background-position: 10% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 15px;
+    border: 2px solid black;
+    padding: 3px 20px;
+    background-color: #4472c4;
+    box-shadow: 10px 10px 2px -4px rgba(0, 0, 0, 0.65);
+    outline: none;
+    height: 40px;
+    margin-top: -30px;
+}
+
+nav a:focus,
+nav a:hover {
+    background-color: #70ad47;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.container {
+    display: flex;
+    padding-top: 40px;
+}
+
+.left-side {
+    width: 25%;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.right-side {
+    margin-left: 50px;
+}
+
+.right-side h3 {
+    font-size: 20px;
+}
+
+.right-side p {
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 20px;
+}
+
+.right-side div {
+    margin-top: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
