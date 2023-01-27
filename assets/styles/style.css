@@ -21,8 +21,12 @@ h1 {
 
 header {
     height: 120px;
-    display: flex;
-    align-items: flex-end;
+    position: relative;
+}
+
+header h1{
+    position: relative;
+    top: 45px;
 }
 
 nav {
@@ -33,8 +37,6 @@ nav {
     background-size: cover;
     opacity: 0.8;
     padding-right: 25px;
-    display: flex;
-    justify-content: flex-end;
     position: relative;
 }
 
@@ -52,6 +54,7 @@ nav a {
     height: 40px;
     position: relative;
     top: -20px;
+    left: 76%;
 }
 
 nav a:focus, nav a:hover {
@@ -103,84 +106,3 @@ nav a:focus, nav a:hover {
     font-weight: bold;
 }
 
-/* ------------------------------ Media Queries ----------------------------- */
-@media (max-width: 576px) {
-
-    header {
-        height: 90px;
-    }
-
-    h1 {
-        font-size: 25px;
-        padding-left: 5px;
-    }
-
-    nav a {
-        font-size: 12px;
-        margin-left: 5px;
-        padding: 3px 10px;
-        height: 30px;
-    }
-
-    .tittle {
-        font-size: 20px;
-        height: 35px;
-    }
-
-    .contact{
-        padding-left: 25px;
-    }
-}
-
-/* -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: 35px;
-        padding-left: 5px;
-    }
-
-    nav a {
-        font-size: 16px;
-        margin-left: 5px;
-        padding: 1px 10px;
-        height: 30px;
-    }
-
-    .tittle {
-        font-size: 20px;
-        height: 40px;
-    }
-
-    .contact{
-        padding-left: 25px;
-    }
-}
-
-
-/* -------------------------------------------------------------------------- */
-@media (max-width: 992px) {
-
-    h1 {
-        font-size: 38px;
-        padding-left: 5px;
-    }
-
-    nav a {
-        font-size: 18px;
-        margin-left: 5px;
-        padding: 1px 10px;
-        height: 30px;
-    }
-
-    .tittle {
-        font-size: 22px;
-        height: 40px;
-        padding-top: 1px;
-    }
-
-    .about {
-        padding-left: 50px;
-        padding-right: 90px;
-    }
-}
