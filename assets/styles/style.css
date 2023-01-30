@@ -2,31 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.tittle {
-    height: 45px;
-    text-align: center;
-    font-size: 25px;
-    border: 3px solid black;
+    font-family: 'Comic Neue', cursive;
 }
 
 /* ------------------------------- Banner/Nav ------------------------------- */
 h1 {
-    font-size: 60px;
-    font-weight: 100;
+    font-size: 70px;
+    font-weight: bold;
     padding-left: 25px;
+    position: relative;
+    top: 40px;
+    font-style: italic;
+
 }
 
 header {
     height: 120px;
     position: relative;
-}
-
-header h1{
-    position: relative;
-    top: 30px;
 }
 
 nav {
@@ -42,10 +34,10 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 10px;
     border: 2px solid black;
     padding: 3px 20px;
     background-color: #4472c4;
@@ -54,11 +46,20 @@ nav a {
     height: 40px;
     position: relative;
     top: -20px;
-    left: 76%;
+    left: 78%;
 }
 
-nav a:focus, nav a:hover {
+a[href^="#"] {
     background-color: #70ad47;
+}
+
+.title {
+    text-align: center;
+    border: 3px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    height: 45px;
+    padding-top: 1px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -79,19 +80,21 @@ nav a:focus, nav a:hover {
 }
 
 
-.right-side h3 {
-    font-size: 20px;
-}
-
 .right-side p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     text-indent: 20px;
     text-align: justify;
 }
 
+h3 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
 .right-side div {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 .about {
@@ -99,11 +102,9 @@ nav a:focus, nav a:hover {
     padding-right: 150px;
 }
 
-
 /* --------------------------------- Contact -------------------------------- */
 .contact {
     margin-top: 20px;
     font-size: 20px;
-    font-weight: bold;
 }
 
