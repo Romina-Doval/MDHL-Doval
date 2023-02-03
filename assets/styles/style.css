@@ -1,8 +1,371 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* ------------------------------ Nav + Header ------------------------------ */
 
+/* ----------------------------------- Nav ---------------------------------- */
+nav {
+    display: flex;
+    background-color: #222f58;
+    padding: 10px 0;
+    align-items: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+nav img {
+    width: 70px;
+}
+
+.logo-nav {
+    width: 70px;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    border: 2px dashed #d9d9d9;
+    padding: 5px 15px;
+    margin-left: 15px;
+    color: #d9d9d9;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a[href^="#"],
+nav a:hover {
+    color: #f8e12e;
+    border-color: #f8e12e;
+}
+
+nav a:hover {
+    box-shadow: 0px 0px 10px 0px #f8e12e;
+}
+
+.pages-nav {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+
+/* --------------------------------- Header --------------------------------- */
+header {
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.banner-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(3.5px);
+}
+
+h1 {
+    color: #d9d9d9;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    position: absolute;
+    top: 30px;
+    left: 15%;
+    padding: 15px;
+    text-shadow: 6px 6px #222f58;
+}
+
+
+/* -------------------------------------------------------------------------- */
+.title p {
+    text-align: center;
+    font-size: 32px;
+    padding: 15px;
+    font-family: 'Codystar', cursive;
+    color: #f8e12e;
+    background-color: #131217;
+    border-top: 3px dashed #f8e12e;
+    border-bottom: 3px dashed #f8e12e;
+    animation-name: title-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes title-animation {
+    from {
+        color: red;
+    }
+
+    to {
+        color: yellow;
+    }
+}
+
+
+/* ---------------------------------- Home ---------------------------------- */
+.container-flex {
+    display: flex;
+    padding: 50px 0 80px;
+    background-image: url(../images/design1_image1.jpg);
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.logo {
+    width: 180px;
+}
+
+#home-img {
+    width: 400px;
+    margin: 20px 0 15px;
+    box-shadow: 0px 0px 7px 4px #5fa199;
+}
+
+.left-side {
+    width: 10%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.about-text p,
+.right-text p {
+    text-indent: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #f8e12e;
+}
+
+.right-side div {
+    padding-bottom: 50px;
+}
+
+.right-side {
+    width: 70%;
+    margin-left: 50px;
+    background-color: #222f58;
+    padding: 40px;
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ---------------------------------- About --------------------------------- */
+.about-1 img,
+.about-2 img {
+    width: 25%;
+    box-shadow: 0px 0px 5px 3px #f9f9f9;
+}
+
+.about-1 img:hover,
+.about-2 img:hover {
+    box-shadow: 0px 0px 12px 10px #f9f9f9;
+}
+
+.about-1,
+.about-2 {
+    display: flex;
+}
+
+.about-2 {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    padding: 50px;
+}
+
+.about-text h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: 4px 4px 2px rgba(217, 217, 217, 0.6);
+}
+
+
+/* --------------------------------- Contact -------------------------------- */
+#contact-img {
+    width: 500px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 7px 4px #d9d9d9;
+}
+
+.contact p {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contact a {
+    color: #5fa199;
+}
+
+.contact a:hover {
+    color: #f8e12e;
+}
+
+.fa-solid,
+.fa-regular {
+    color: #f8e12e;
+}
+
+
+/* -------------------------------- Game Info ------------------------------- */
+.right-info h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 600px;
+    text-align: center;
+}
+
+th {
+    font-size: 25px;
+    color: #f8e12e;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+tr {
+    font-size: 20px;
+}
+
+th,
+td {
+    padding-top: 10px;
+}
+
+#table-title th {
+    padding-bottom: 15px;
+}
+
+.table-footer {
+    padding: 15px 50px;
+    margin-top: 100px;
+    padding-top: 30px;
+    border-top: #f8e12e 2px dashed;
+}
+
+.table-footer p {
+    margin-top: 15px;
+}
+
+#title-coord {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 50px;
+}
+
+#coordinator {
+    display: flex;
+    justify-content: center
+}
+
+#coordinator p {
+    margin-left: 40px;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+#coordinator a {
+    color: #5fa199;
+}
+
+#coordinator a:hover {
+    color: #f8e12e;
+}
+
+
+/* ---------------------------- Rules & Policies ---------------------------- */
+.right-rules {
+    width: 70%;
+    margin-left: 50px;
+    background-color: #222f58;
+    padding: 40px 80px;
+    color: #d9d9d9;
+    padding-bottom: 80px;
+}
+
+.rules-title {
+    text-align: center;
+}
+
+.rules-title h2 {
+    font-size: 40px;
+}
+
+.rules-title p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.rules-1 p {
+    text-indent: 40px;
+    margin-top: 20PX;
+}
+
+.rules-1,
+.rules-2 {
+    margin-top: 60px;
+}
+
+.list,
+.list-2 {
+    margin-left: 20px;
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.list-2 li {
+    margin-top: 10px;
+}
+
+.sub-rules li {
+    margin: 15px 0 10px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.fa-circle {
+    color: #d9d9d9;
+}
+
+
+/* --------------------------------- Footer --------------------------------- */
+footer img {
+    width: 60px;
+}
+
+footer {
+    background-color: #222f58;
+    color: #f8e12e;
+    padding: 15px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+footer p {
+    font-size: 20px;
+    margin-left: 25px;
+}
