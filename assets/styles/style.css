@@ -116,16 +116,20 @@ h1 {
     width: 180px;
 }
 
-#home-img {
+
+#home-img img {
     width: 400px;
     margin: 20px 0 15px;
-    box-shadow: 0px 0px 7px 4px #5fa199;
+    box-shadow: 0px 0px 5px 3px #f9f9f9;
 }
 
 .left-side {
-    width: 10%;
+    width: 15%;
     text-align: center;
     margin-left: 5%;
+    box-shadow: 0px 0px 25px 0px #f9f9f9;
+    background-image: url(../images/players1.jpg);
+    background-repeat: no-repeat;
 }
 
 p {
@@ -136,7 +140,7 @@ p {
 
 .about-text p,
 .right-text p {
-    text-indent: 40px;
+    text-indent: 50px;
 }
 
 h2 {
@@ -151,12 +155,17 @@ h2 {
 .right-side {
     width: 70%;
     margin-left: 50px;
-    background-color: #222f58;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,47,88,0.929140406162465) 35%);
     padding: 40px;
     color: #d9d9d9;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 25px 0px #f9f9f9;
+}
+
+h2 .fa-star {
+    color: #d9d9d9;
 }
 
 
@@ -219,29 +228,30 @@ h2 {
 
 
 /* -------------------------------- Game Info ------------------------------- */
-.right-info h2 {
+.right-info h2, .right-maps h2{
     text-align: center;
     font-size: 30px;
     margin-bottom: 5px;
+    text-shadow: 4px 4px 2px rgba(217, 217, 217, 0.6);
 }
 
 table {
-    width: 600px;
+    width: 800px;
     text-align: center;
 }
 
 th {
-    font-size: 25px;
+    font-size: 30px;
     color: #f8e12e;
 }
 
 .date {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 tr {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 th,
@@ -251,12 +261,50 @@ td {
 
 #table-title th {
     padding-bottom: 15px;
+    border-bottom: 3px solid white;
 }
 
-.table-footer {
-    padding: 15px 50px;
-    margin-top: 100px;
+table a:hover {
+    color: red;
+}
+
+/* -------------------------------------------------------------------------- */
+.right-maps {
+    margin-top: 80px;
     padding-top: 30px;
+    width: 100%;
+    border-top: #f8e12e 2px dashed;
+}
+
+.maps {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+
+iframe {
+    width: 300px;
+    height: 250px;
+}
+
+.table-maps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-maps div {
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.table-maps p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+.table-footer {
+    padding: 30px 50px;
     border-top: #f8e12e 2px dashed;
 }
 
@@ -292,14 +340,19 @@ td {
 }
 
 
+
+
+
 /* ---------------------------- Rules & Policies ---------------------------- */
 .right-rules {
     width: 70%;
     margin-left: 50px;
-    background-color: #222f58;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,47,88,0.929140406162465) 35%);
     padding: 40px 80px;
     color: #d9d9d9;
     padding-bottom: 80px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px 0px #f9f9f9;
 }
 
 .rules-title {
@@ -308,6 +361,7 @@ td {
 
 .rules-title h2 {
     font-size: 40px;
+    text-shadow: 4px 4px 2px rgba(217, 217, 217, 0.6);
 }
 
 .rules-title p {
