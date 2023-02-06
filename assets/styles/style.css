@@ -103,6 +103,11 @@ h1 {
     }
 }
 
+.title {
+    position: sticky;
+    top: 0;
+}
+
 
 /* ---------------------------------- Home ---------------------------------- */
 .container-flex {
@@ -115,7 +120,6 @@ h1 {
 .logo {
     width: 180px;
 }
-
 
 #home-img img {
     width: 400px;
@@ -149,7 +153,7 @@ h2 {
 }
 
 .right-side div {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .right-side {
@@ -273,7 +277,7 @@ table a:hover {
     margin-top: 80px;
     padding-top: 30px;
     width: 100%;
-    border-top: #f8e12e 2px dashed;
+    border-top:  3px dashed #f8e12e;
 }
 
 .maps {
@@ -282,30 +286,27 @@ table a:hover {
     display: flex;
 }
 
-iframe {
-    width: 300px;
-    height: 250px;
-}
 
 .table-maps {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .table-maps div {
     flex-direction: column;
-    margin: 0 30px;
+    margin: 15px 30px;
 }
 
 .table-maps p {
     text-align: center;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 /* -------------------------------------------------------------------------- */
 .table-footer {
-    padding: 30px 50px;
-    border-top: #f8e12e 2px dashed;
+    padding: 10px 50px;
+    border-top:  3px dashed #f8e12e;
 }
 
 .table-footer p {
@@ -339,9 +340,14 @@ iframe {
     color: #f8e12e;
 }
 
+.page-up {
+    text-align: center;
+    margin-top: 25px;
+}
 
-
-
+.page-up .fa-circle-up:hover {
+    transform: scale(1.2);
+}
 
 /* ---------------------------- Rules & Policies ---------------------------- */
 .right-rules {
@@ -374,6 +380,10 @@ iframe {
     margin-top: 20PX;
 }
 
+.rules-1 {
+    margin-bottom: 50px;
+}
+
 .rules-1,
 .rules-2 {
     margin-top: 60px;
@@ -404,7 +414,112 @@ iframe {
 }
 
 /* ---------------------------- Registration Form --------------------------- */
+legend {
+    font-size: 25px;
+    color: #f8e12e;
+    margin-bottom: 20px;
+}
 
+label {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+input {
+    margin-right: 15px;
+    height: 30px;
+}
+
+.container-form {
+    width: 90%;
+    padding: 0px 40px;
+    border: 4px double;
+}
+
+.personal, .school, .position {
+    border-bottom: 5px double;
+}
+
+.uniform, .personal, .school, .position{
+    margin-top: 30px;
+}
+
+.form-subt {
+    margin: 25px 0 30px;
+    font-size: 28px;
+    color: #f8e12e;
+}
+
+.form-subt2 {
+    margin-right: 10px;
+}
+
+#subt-gender, #subt-grade {
+    font-weight: normal;
+}
+
+#fname, #lname {
+    width: 30%;
+}
+
+#fname, #lname, #address, #city, #zip {
+    margin-bottom: 15px;
+}
+
+#address {
+    width: 80%;
+}
+
+#city {
+    width: 47%;
+}
+#zip {
+    width: 30%;
+}
+
+.date-gender {
+    display: flex;
+    align-items: baseline;
+}
+
+input[type="radio"] {
+    width: 20px;
+    position: relative;
+    top: 10px;
+}
+
+#div-grade input {
+    margin-right: 0;
+}
+
+#div-grade label {
+    margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+#permission {
+    margin-top: 30px;
+    width: 100%;
+    border-top: 3px dashed #f8e12e;
+    padding: 30px 20px 0;
+}
+
+#permission p {
+    margin-top: 15px;
+    text-indent: 40px;
+}
+
+#firms {
+    margin-top: 60px;
+}
 
 /* --------------------------------- Footer --------------------------------- */
 footer img {
