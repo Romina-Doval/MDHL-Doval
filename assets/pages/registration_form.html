@@ -57,7 +57,7 @@
                 <form action="./show_data.html" method="get"></form>
 
                 <div class="personal">
-                    <p class="form-subt">Personal Information</p>
+                    <p class="form-subt2">Personal Information</p>
 
                     <label for="fname">Player´s grade Name:</label>
                     <input type="text" id="fname" name="fname" placeholder="Your name.." required>
@@ -78,109 +78,104 @@
                         <label for="date">Birth Date:</label>
                         <input type="date" id="date" name="date" required>
 
-                        <p id="subt-gender">Gender:</p>
+                        <p id="sub-gender">Gender:</p>
                         <label for="female">Female</label>
-                        <input type="radio" id="female" name="gender">
+                        <input type="radio" id="female" name="gender" value="female">
                         <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender">
+                        <input type="radio" id="male" name="gender" value="male">
                     </div>
 
                     <div id="div-grade">
-                        <p id="subt-grade">Grade:</p>
-                        <input type="radio" id="pre" name="grade">
-                        <label for="pre">Pre-School</label>
+                        <p id="sub-grade">Grade:</p>
+                        <input type="radio" id="grade-1" name="grade" value="pre-school">
+                        <label for="grade-1">Pre-School</label>
 
-                        <input type="radio" id="first" name="grade">
-                        <label for="first">1 st</label>
+                        <input type="radio" id="grade-2" name="grade" value="first-grade">
+                        <label for="grade-2">1 st</label>
 
-                        <input type="radio" id="second" name="grade">
-                        <label for="second">2 st</label>
+                        <input type="radio" id="grade-3" name="grade" value="second-grade">
+                        <label for="grade-3">2 st</label>
 
-                        <input type="radio" id="third" name="grade">
-                        <label for="third">3 st</label>
+                        <input type="radio" id="grado-4" name="grade" value="third-grade">
+                        <label for="grade-4">3 st</label>
 
-                        <input type="radio" id="fourth" name="grade">
-                        <label for="fourth">4 st</label>
+                        <input type="radio" id="grado-5" name="grade" value="fourth-grade">
+                        <label for="grado-5">4 st</label>
 
-                        <input type="radio" id="fifth" name="grade">
-                        <label for="fifth">5 st</label>
+                        <input type="radio" id="grade-6" name="grade" value="fifth-grade">
+                        <label for="grade-6">5 st</label>
                     </div>
                 </div>
 
                 <!-- ----------------------------------------------------------------------- -->
-
-                <div class="school">
+                
                     <p class="form-subt">Which elementary school do you live near?</p>
+                    <p id="sub-school">Closest School:</p>
 
-                    <p class="form-subt2">Closest School:</p>
+                <div class="div-form">
+                        <input type="radio" id="option-1" name="school" value="katzenmaier">
+                        <label for="option-1" class="label">AJ Katzenmaier</label>
 
-                    <div class="school-col1">
-                        <input type="radio" id="option-1" name="school">
-                        <label for="option-1">AJ Katzenmaier</label>
+                        <input type="radio" id="option-2" name="school" value="greenbay">
+                        <label for="option-2" class="label">Marjorie P Hart</label>
 
-                        <input type="radio" id="option-2" name="school">
-                        <label for="option-2">Greenbay</label>
+                        <input type="radio" id="option-3" name="school" value="howard">
+                        <label for="option-3" class="label">Greenbay</label>
+                    
+                        <input type="radio" id="option-4" name="school" value="marjorie">
+                        <label for="option-4" class="label">North Elementary</label>
 
-                        <input type="radio" id="option-3" name="school">
-                        <label for="option-3">Howard A Yeager</label>
-                    </div>
+                        <input type="radio" id="option-5" name="school" value="north">
+                        <label for="option-5" class="label">Howard A Yeager</label>
 
-                    <div class="school-col2">
-                        <input type="radio" id="option-4" name="school">
-                        <label for="option-4">Marjorie P Hart</label>
-
-                        <input type="radio" id="option-5" name="school">
-                        <label for="option-5">North Elementary</label>
-
-                        <input type="radio" id="option-6" name="school">
-                        <label for="option-6">South Elementary </label>
-                    </div>
+                        <input type="radio" id="option-6" name="school" value="south">
+                        <label for="option-6" class="label">South Elementary</label>
                 </div>
 
                 <!-- ----------------------------------------------------------------------- -->
+                <p class="form-subt">What position(s) do you normally play? (check all that apply)</p>
+               
+                <div class="div-form">
+                    <input type="checkbox" id="position-1" name="position" value="forward">
+                    <label for="position-1" class="label">Forward</label>
 
-                <div class="position">
-                    <p class="form-subt">What position(s) do you normally play? (check all that apply)</p>
+                    <input type="checkbox" id="position-2" name="position" value="defense">
+                    <label for="position-2" class="label">Midfield</label>
 
-                    <input type="checkbox" id="forward" name="position">
-                    <label for="forward">Forward</label>
+                    <input type="checkbox" id="position-3" name="position" value="midfield">
+                    <label for="position-3" class="label">Defense</label>
 
-                    <input type="checkbox" id="defense" name="position">
-                    <label for="defense">Defense</label>
-
-                    <input type="checkbox" id="midfield" name="position">
-                    <label for="midfield">Midfield</label>
-
-                    <input type="checkbox" id="goalkeeper" name="position">
-                    <label for="goalkeeper">Goalkeeper</label>
+                    <input type="checkbox" id="position-4" name="position" value="goalkeeper">
+                    <label for="position-4" class="label">Goalkeeper</label>
                 </div>
 
                 <!-- ----------------------------------------------------------------------- -->
+                <p class="form-subt">Uniform Size:</p>
 
-                <div class="uniform">
-                    <p class="form-subt">Uniform Size:</p>
+                <div class="div-form">
+                    <input type="radio" id="size-1" name="uniform" value="youth-small">
+                    <label for="size-1" class="label">Youth Small</label>
 
-                    <input type="radio" id="youth-small" name="uniform">
-                    <label for="youth-small">Youth Small</label>
+                    <input type="radio" id="size-2" name="uniform" value="youth-medium">
+                    <label for="size-2" class="label">Medium</label>
 
-                    <input type="radio" id="youth-medium" name="uniform">
-                    <label for="youth-medium">Youth Medium</label>
+                    <input type="radio" id="size-3" name="uniform" value="youth-large">
+                    <label for="size-3" class="label">Youth Medium</label>
 
-                    <input type="radio" id="youth-largue" name="uniform">
-                    <label for="youth-largue">Youth Large</label>
+                    <input type="radio" id="size-4" name="uniform" value="small">
+                    <label for="size-4" class="label">Large</label>
 
-                    <input type="radio" id="small" name="uniform">
-                    <label for="small">Small</label>
+                    <input type="radio" id="size-5" name="uniform" value="medium">
+                    <label for="size-5" class="label">Youth Large</label>
 
-                    <input type="radio" id="medium" name="uniform">
-                    <label for="medium">Medium</label>
+                    <input type="radio" id="size-6" name="uniform" value="large">
+                    <label for="size-6" class="label">Extra-Large</label>
 
-                    <input type="radio" id="large" name="uniform">
-                    <label for="large">Large</label>
-
-                    <input type="radio" id="extra-large" name="uniform">
-                    <label for="extra-large">Extra-Large</label>
+                    <input type="radio" id="size-7" name="uniform" value="extra-large">
+                    <label for="size-7" class="label">Small</label>
                 </div>
+
+                
             </div>
 
             <!-- ----------------------------------------------------------------------- -->
@@ -188,13 +183,18 @@
             <div id="permission">
 
                 <h2>PERMISSION TO PLAY</h2>
-                <p>I, the parent or guardian of the minor registrant, agree that the registrant and U will abide by all
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and U will abide by
+                    all
                     the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical
-                    injury associated with hockey and in consideration for the "League" accepting the registrant for its
-                    hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their
-                    employees and associated personnel and volunteers, including the facilities used for practices and
+                    injury associated with hockey and in consideration for the "League" accepting the registrant for
+                    its
+                    hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL,
+                    their
+                    employees and associated personnel and volunteers, including the facilities used for practices
+                    and
                     games, against any claim by or on behalf of the registrant as a result of the registrant´s
-                    participation in the program and/or being transported to or from MDHL sponsored activities, which
+                    participation in the program and/or being transported to or from MDHL sponsored activities,
+                    which
                     transportation.
                 </p>
 

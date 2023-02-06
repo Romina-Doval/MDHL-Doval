@@ -23,6 +23,11 @@ nav img {
     margin-left: 20px;
 }
 
+.logo-nav img:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
 nav a {
     text-decoration: none;
     border: 2px dashed #d9d9d9;
@@ -105,7 +110,7 @@ h1 {
 
 .title {
     position: sticky;
-    top: 0;
+    top: 0px;
 }
 
 
@@ -123,7 +128,7 @@ h1 {
 
 #home-img img {
     width: 400px;
-    margin: 20px 0 15px;
+    margin: 20px 0px 15px;
     box-shadow: 0px 0px 5px 3px #f9f9f9;
 }
 
@@ -436,26 +441,35 @@ input {
     border: 4px double;
 }
 
-.personal, .school, .position {
-    border-bottom: 5px double;
-}
-
 .uniform, .personal, .school, .position{
     margin-top: 30px;
 }
 
-.form-subt {
-    margin: 25px 0 30px;
+.form-subt, .form-subt2 {
     font-size: 28px;
+    color: #f8e12e;
+     margin-bottom: 20px;
+}
+
+.form-subt {
+    border-top: 5px double #d9d9d9;
+    padding-top: 40px;
+}
+
+
+
+#sub-gender, #sub-grade, #sub-school{
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+#sub-school {
+    margin-bottom: 15px;
     color: #f8e12e;
 }
 
-.form-subt2 {
-    margin-right: 10px;
-}
-
-#subt-gender, #subt-grade {
-    font-weight: normal;
+#subt-gender {
+    margin-left: 25px;
 }
 
 #fname, #lname {
@@ -482,19 +496,44 @@ input {
     align-items: baseline;
 }
 
-input[type="radio"] {
+input[type="radio" i],
+input[type="checkbox" i]{
     width: 20px;
-    position: relative;
-    top: 10px;
+    display: flex;
+    align-self: center;
 }
 
 #div-grade input {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 #div-grade label {
-    margin-right: 25px;
+   margin-right: 25px;
+   margin-left: 10px;
 }
+
+#div-grade {
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.div-form{
+    flex-wrap: wrap;
+    display: flex;
+    width: 500px;
+}
+
+.label{
+    width: 200px;
+}
+
+
+
+
+
+
 
 
 
